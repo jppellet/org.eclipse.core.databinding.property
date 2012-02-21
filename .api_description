@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component name="org.eclipse.core.databinding.property_1.4.0.I20110222-0800" version="1.2">
+    <plugin id="org.eclipse.core.databinding.property_1.4.0.I20110222-0800"/>
+    <package name="org.eclipse.core.databinding.property" visibility="1">
+        <type name="INativePropertyListener" restrictions="0">
+            <method name="addTo" restrictions="8" signature="(Ljava/lang/Object;)V"/>
+            <method name="removeFrom" restrictions="8" signature="(Ljava/lang/Object;)V"/>
+        </type>
+        <type name="IProperty" restrictions="1"/>
+        <type name="ISimplePropertyListener" restrictions="3"/>
+    </package>
+    <package name="org.eclipse.core.databinding.property.list" visibility="1">
+        <type name="IListProperty" restrictions="1"/>
+        <type name="ListProperty" restrictions="0">
+            <method name="doGetList" restrictions="8" signature="(Ljava/lang/Object;)Ljava/util/List;"/>
+            <method name="doSetList" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/List;)V"/>
+        </type>
+        <type name="SimpleListProperty" restrictions="0">
+            <method name="adaptListener" restrictions="8" signature="(Lorg/eclipse/core/databinding/property/ISimplePropertyListener;)Lorg/eclipse/core/databinding/property/INativePropertyListener;"/>
+            <method name="doSetList" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/List;Lorg/eclipse/core/databinding/observable/list/ListDiff;)V"/>
+            <method name="setList" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/List;Lorg/eclipse/core/databinding/observable/list/ListDiff;)V"/>
+        </type>
+    </package>
+    <package name="org.eclipse.core.databinding.property.map" visibility="1">
+        <type name="IMapProperty" restrictions="1"/>
+        <type name="MapProperty" restrictions="0">
+            <method name="doGetMap" restrictions="8" signature="(Ljava/lang/Object;)Ljava/util/Map;"/>
+            <method name="doSetMap" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Map;)V"/>
+            <method name="doUpdateMap" restrictions="8" signature="(Ljava/lang/Object;Lorg/eclipse/core/databinding/observable/map/MapDiff;)V"/>
+        </type>
+        <type name="SimpleMapProperty" restrictions="0">
+            <method name="adaptListener" restrictions="8" signature="(Lorg/eclipse/core/databinding/property/ISimplePropertyListener;)Lorg/eclipse/core/databinding/property/INativePropertyListener;"/>
+            <method name="doSetMap" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Map;Lorg/eclipse/core/databinding/observable/map/MapDiff;)V"/>
+            <method name="setMap" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Map;Lorg/eclipse/core/databinding/observable/map/MapDiff;)V"/>
+        </type>
+    </package>
+    <package name="org.eclipse.core.databinding.property.set" visibility="1">
+        <type name="ISetProperty" restrictions="1"/>
+        <type name="SetProperty" restrictions="0">
+            <method name="doGetSet" restrictions="8" signature="(Ljava/lang/Object;)Ljava/util/Set;"/>
+            <method name="doSetSet" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Set;)V"/>
+            <method name="doUpdateSet" restrictions="8" signature="(Ljava/lang/Object;Lorg/eclipse/core/databinding/observable/set/SetDiff;)V"/>
+        </type>
+        <type name="SimpleSetProperty" restrictions="0">
+            <method name="adaptListener" restrictions="8" signature="(Lorg/eclipse/core/databinding/property/ISimplePropertyListener;)Lorg/eclipse/core/databinding/property/INativePropertyListener;"/>
+            <method name="doSetSet" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Set;Lorg/eclipse/core/databinding/observable/set/SetDiff;)V"/>
+            <method name="setSet" restrictions="8" signature="(Ljava/lang/Object;Ljava/util/Set;Lorg/eclipse/core/databinding/observable/set/SetDiff;)V"/>
+        </type>
+    </package>
+    <package name="org.eclipse.core.databinding.property.value" visibility="1">
+        <type name="IValueProperty" restrictions="1"/>
+        <type name="SimpleValueProperty" restrictions="0">
+            <method name="adaptListener" restrictions="8" signature="(Lorg/eclipse/core/databinding/property/ISimplePropertyListener;)Lorg/eclipse/core/databinding/property/INativePropertyListener;"/>
+        </type>
+        <type name="ValueProperty" restrictions="0">
+            <method name="doGetValue" restrictions="8" signature="(Ljava/lang/Object;)Ljava/lang/Object;"/>
+            <method name="doSetValue" restrictions="8" signature="(Ljava/lang/Object;Ljava/lang/Object;)V"/>
+        </type>
+    </package>
+</component>
